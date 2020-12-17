@@ -8,26 +8,26 @@
 
 Integrantes: Aitor, Iñaki & Julio Gonzalez
 
-#Tarea 1:
+##Tarea 1:
 
 Codigo de Python para funcionamiento de Gigglebot
 
-#Tarea 2: 
+##Tarea 2: 
 
 Archivos CAD con modificaciones para uso del sonar y sensor
 
 Programacion de Python para medir distancia de componentes ocn vision artificial
 
-#Tarea 3: 
+##Tarea 3: 
 
 Codigo de Particle para la obtension de datos por parte del sensor y su transimision para le uso en Red Node
 
 Archivo .JSON con flows necesarios para la visualicacion del Dashboard
 
-#Tarea 4: 
+##Tarea 4: 
 
 Codigo en control IO y video de funcionamiento 
 
-#Tarea 5:
+##Tarea 5:
 
 Link para visualizacion de Dashboard Online de datos obtenidos por los sensores en Tablueau Online
