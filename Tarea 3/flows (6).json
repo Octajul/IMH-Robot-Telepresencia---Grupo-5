@@ -1,0 +1,3353 @@
+[
+    {
+        "id": "959e93c8.bf9a8",
+        "type": "tab",
+        "label": "IMH IOT",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "9b6aa7be.87d5d8",
+        "type": "tab",
+        "label": "Laida",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "1cf6d477.59981c",
+        "type": "tab",
+        "label": "Test",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "6e4aba31.18a674",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c862be7c.7b62a",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ea3090fc.fa2968",
+        "type": "tab",
+        "label": "Dani-Guille-Luis",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a56b9ad4.168708",
+        "type": "tab",
+        "label": "Aitor",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "236088dc.d74e48",
+        "type": "mqtt-broker",
+        "name": "Stackhero integrated MQTT server",
+        "broker": "mosquitto",
+        "port": "1883",
+        "clientid": "node-red",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "fb61a026.b01fb",
+        "type": "ui_group",
+        "name": "CONFORT AMBIENTAL",
+        "tab": "7ca33a50.bef344",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "7ca33a50.bef344",
+        "type": "ui_tab",
+        "d": true,
+        "name": "                                  Panel de control",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a6240efb.b92d18",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#056f99",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#487df9",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#1017e0",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#487df9",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#487df9",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#92b2fb",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#487df9",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "PANEL DE CONTROL IMH ELGOIBAR",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM",
+            "sizes": {
+                "sx": 50,
+                "sy": 50,
+                "gx": 10,
+                "gy": 10,
+                "cx": 10,
+                "cy": 10,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2687d3d0.301b54",
+        "type": "particle-cloud",
+        "host": "https://api.particle.io",
+        "port": "443",
+        "accesstoken": "__PWRD__",
+        "name": "Argon"
+    },
+    {
+        "id": "d1e5b4d6.4c515",
+        "type": "ui_group",
+        "name": "CALIDAD DEL AIRE",
+        "tab": "7ca33a50.bef344",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "800e0d7a.7b3178",
+        "type": "ui_link",
+        "name": "IMH",
+        "link": "http://www.imh.eus/es",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "835c602f.383538",
+        "type": "ui_link",
+        "name": "Robot de Telepresencia",
+        "link": "https://iarakis.github.io/",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 3
+    },
+    {
+        "id": "9f1ecc55.49e0e",
+        "type": "ui_tab",
+        "name": "QR Realidad Aumentada",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7eea39b5.8795f8",
+        "type": "ui_group",
+        "name": "Escanee el QR y cuando abra el enlace apunte al logo de IMH",
+        "tab": "9f1ecc55.49e0e",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "7b37b2ed.5e849c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "7eea39b5.8795f8",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5aa4ea7f.b5ee6c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5944b980.e1f3a8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d2c7f68a.8dbf48",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5944b980.e1f3a8",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "55a9d1b0.d6029",
+        "type": "ui_tab",
+        "name": "Test",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ee7d958f.ec8fc8",
+        "type": "ui_group",
+        "name": "IMH",
+        "tab": "55a9d1b0.d6029",
+        "order": 1,
+        "disp": false,
+        "width": 16,
+        "collapse": false
+    },
+    {
+        "id": "95bb7dca.4fc3c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cd81d08b.eebb3",
+        "type": "ui_group",
+        "z": "f59603d8.0a6a",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "800ddb3.8bca428",
+        "type": "ui_group",
+        "z": "c862be7c.7b62a",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "18fa6ed0.e622c1",
+        "type": "ui_group",
+        "z": "6e4aba31.18a674",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "57375478.e797cc",
+        "type": "ui_tab",
+        "name": "Dani-Guille-Luis",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a936c760.9e0ba",
+        "type": "ui_group",
+        "name": "Robot de Telepresencia",
+        "tab": "57375478.e797cc",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "ffbda004.0947d8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a936c760.9e0ba",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "617139d3.27703",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a936c760.9e0ba",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "966bd89.a35ec28",
+        "type": "ui_tab",
+        "name": "Aitor",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "261c187b.09bbe8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "966bd89.a35ec28",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "68d34fdb.d316b",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ed8f5902.6ced78",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "67a70b.777ed8f4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f80f0e2b.d6fe9",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3dfb0b8b.e9c234",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "588b4b3b.a5cd84",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "46af6e48.77894",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "163e83f.8e2097c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e0ce214e.243b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 13,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "be619cbf.d9e8a",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 14,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "105da29e.d4027d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 15,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "8adcc64a.368218",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 16,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "571f839b.e634cc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 17,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "cba57a3.e63ea88",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 18,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "828e1fb2.d53e9",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 19,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "cf3e5c82.4568f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 20,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "e6a3ed56.406d2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 21,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "96a6cb7e.e035e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 22,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "46e5e26e.7b12dc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 23,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "d5567bb.1ef7c88",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 24,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "d6e1553a.cd0908",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 25,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "b7e3da2.8947528",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 26,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "1da10381.5e6a9c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 27,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "255d2067.decd3",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 28,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "8c84ef69.651d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 29,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "571fb3fe.3530bc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 30,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "842fecbf.e58bf",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 31,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "fc7e805e.a0eec",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 32,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "6569163b.0b2478",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 33,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "7e6bb5cf.7a72bc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 34,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "c0366bb6.a95548",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 35,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "fddbf63.f09e408",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 36,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "2c2137c8.68e888",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 38,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "bd98113d.0b78c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 39,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "d3752285.c523f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 40,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "2ae2da88.f4da06",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 41,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "d7d47e5c.b020a",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 42,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "14466fd3.cd24e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 44,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "ca32e213.76f1c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 45,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "4cabeb26.7167e4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 46,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "f09336ec.2465c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 47,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "ab27aa2e.932bd8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 48,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "963b5d9b.899df",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 49,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "7904076.11c28f8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 50,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "a3ed5664.e81958",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 51,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "22d0850e.38b18a",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 52,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "f15fbee0.d2fa7",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 53,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "f068cc47.ded3d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 55,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "777518ed.0d60b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 56,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "c09c4e8f.43171",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 57,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "c5e79ee4.573ee",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 58,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "130f922d.d571fe",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 59,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "ecb96874.b56628",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 60,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "23cc09b9.d14bf6",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 61,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "4934db0d.3a8604",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 63,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "c7201b5b.ead8e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 64,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "e363bedb.0b0fa",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 65,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "95812363.efa8d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ee7d958f.ec8fc8",
+        "order": 66,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "6fb74011.115a2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "71123bb7.e21074",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "17f1040.b34a8fc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ad68ebba.5e8718",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a05c54d.1acc0a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "662fc583.1f41bc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7fdaed8.a732714",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "87cfa1cc.b4254",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "576891af.5e548",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3924e7d3.ce5af8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bffea9a3.a5d338",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5672c3a1.fb2a5c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bd0214a9.5f12d8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "707fc336.ae438c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "30b52dfc.608452",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 20,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "e2267f45.f73d4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b940ead7.ee6148",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 24,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "63098671.7b7368",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 25,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "a41cb8fd.075608",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a8b906df.affed8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 27,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "676fecd8.2d3924",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 28,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "bacc189.e8ec1e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 29,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "158494f3.799afb",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 30,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "dc7f9184.d3184",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 31,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8e88f88f.58a968",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d492590c.f5a058",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "261c187b.09bbe8",
+        "order": 33,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "c4a2c630.ac6878",
+        "type": "ui_tab",
+        "name": "IMH Robot Telepresencia ",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f7c6af99.2e335",
+        "type": "ui_group",
+        "name": "IMH Robot Telepresencia",
+        "tab": "c4a2c630.ac6878",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "4b8da6c2.b3e078",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f7c6af99.2e335",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66cbc702.e36d28",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f7c6af99.2e335",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "72ef7abf.df2c04",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f7c6af99.2e335",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c6d7e5a6.1fcc38",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f7c6af99.2e335",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "267e195a.5253c6",
+        "type": "inject",
+        "z": "9b6aa7be.87d5d8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "bb0e621e.256da",
+                "52ea364c.8de508",
+                "1adbf3e.915980c",
+                "706a4646.eb62d8"
+            ]
+        ]
+    },
+    {
+        "id": "d7f4b2d5.e8b0b",
+        "type": "debug",
+        "z": "9b6aa7be.87d5d8",
+        "name": "Log datos",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c6782070.1f6e",
+        "type": "ui_gauge",
+        "z": "9b6aa7be.87d5d8",
+        "name": "Temperatura",
+        "group": "fb61a026.b01fb",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura (ºC)",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "45",
+        "colors": [
+            "#1e00b3",
+            "#e600d2",
+            "#230b0b"
+        ],
+        "seg1": "10",
+        "seg2": "25",
+        "x": 1010,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5e1aac9f.ce52f4",
+        "type": "ui_chart",
+        "z": "9b6aa7be.87d5d8",
+        "name": "Humedad",
+        "group": "fb61a026.b01fb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Humedad (% )",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Information should be seen soon",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2680c0",
+            "#aec7e8",
+            "#ea8b39",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1020,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fe7650f.eb644b",
+        "type": "e-mail",
+        "z": "9b6aa7be.87d5d8",
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "secure": false,
+        "tls": true,
+        "name": "iarakis@kaixo.com",
+        "dname": "Enviar Email",
+        "x": 650,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "52e0c8a.a29db38",
+        "type": "function",
+        "z": "9b6aa7be.87d5d8",
+        "name": "Si la humedad es > 70%",
+        "func": "if(msg.payload.name && msg.payload.name==\"Humedad\"){\nvar humidity=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n if(humidity>40){\n\n        msg.payload=\"La humedad está por encima de \"+humidity+\"%\"; \n        msg.to=\"iarakis@kaixo.com\";\n        msg.topic=\"Armeria Eskola Iot\";\n        return msg;\n    }\n  \n  \n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "1fe7650f.eb644b"
+            ]
+        ]
+    },
+    {
+        "id": "d5831d9e.bf6fd",
+        "type": "debug",
+        "z": "9b6aa7be.87d5d8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "607d1b62.404704",
+        "type": "function",
+        "z": "9b6aa7be.87d5d8",
+        "name": "Parsear para los gráficos",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar msg6={};\nvar msg7={};\n\nif(msg.payload.name && msg.payload.name==\"Temperatura\"){\n\nmsg1.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[msg1,null,null]; \n\n}\n\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\n\nmsg2.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[null,msg2,null]; \n}\nif(msg.payload.name && msg.payload.name==\"spark/status\"){\n\n    if(msg.payload.data==\"online\"){\n        \n        msg3.payload=true; \n        \n    }else if(msg.payload.data==\"offline\"){\n\n        msg3.payload=false;\n    }\n\nreturn[null,null,msg3]; \n}\n\n//Añadido\nif(msg.payload.name && msg.payload.name==\"eCO2\"){\n\nmsg4.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg4.topic=\"Line1\";\n\nreturn[null, null, null, msg4]; \n}\n\nif(msg.payload.name && msg.payload.name==\"TVOC\"){\n\nmsg5.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg5.topic=\"Line2\";\n\nreturn[null,null, null, null, msg5]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"Ruido1\"){\n\nmsg6.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg6.topic=\"Line2\";\n\nreturn[null,null, null, null, msg6]; \n}\n\nif(msg.payload.name && msg.payload.name==\"Ruido2\"){\n\nmsg6.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg6.topic=\"Line2\";\n\nreturn[null,null, null, null, msg7]; \n}\n\n\n",
+        "outputs": 7,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 650,
+        "y": 380,
+        "wires": [
+            [
+                "c6782070.1f6e",
+                "d5831d9e.bf6fd"
+            ],
+            [
+                "5e1aac9f.ce52f4",
+                "d5831d9e.bf6fd"
+            ],
+            [
+                "e6567e7a.647ea",
+                "d5831d9e.bf6fd",
+                "cd8e4575.10fb08",
+                "c5de22bc.7c62e"
+            ],
+            [
+                "cd751520.8cda88"
+            ],
+            [
+                "ba942f23.b40f8"
+            ],
+            [
+                "a5948907.b43ab8"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "Temperatura",
+            "Humidad",
+            "Spark/status",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "bb0e621e.256da",
+        "type": "particle-SSE",
+        "z": "9b6aa7be.87d5d8",
+        "pcloud": "2687d3d0.301b54",
+        "subscribetype": "devid",
+        "devprodslug": "e00fce68d503cd57cf4fd99e",
+        "devid": "",
+        "evtname": "",
+        "strict": false,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "d7f4b2d5.e8b0b",
+                "52e0c8a.a29db38",
+                "607d1b62.404704"
+            ]
+        ]
+    },
+    {
+        "id": "e6567e7a.647ea",
+        "type": "ui_led",
+        "z": "9b6aa7be.87d5d8",
+        "group": "fb61a026.b01fb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Confort ambiental On/Off",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "",
+        "x": 1130,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "cd751520.8cda88",
+        "type": "ui_chart",
+        "z": "9b6aa7be.87d5d8",
+        "name": "eCO2",
+        "group": "d1e5b4d6.4c515",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "eCO2 (PPM)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba942f23.b40f8",
+        "type": "ui_chart",
+        "z": "9b6aa7be.87d5d8",
+        "name": "TVOC",
+        "group": "d1e5b4d6.4c515",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "tVOC (PPM)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd8e4575.10fb08",
+        "type": "ui_led",
+        "z": "9b6aa7be.87d5d8",
+        "group": "d1e5b4d6.4c515",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Calidad del aire On/Off",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "",
+        "x": 1150,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "52ea364c.8de508",
+        "type": "ui_media",
+        "z": "9b6aa7be.87d5d8",
+        "d": true,
+        "group": "",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "video",
+        "file": "videoplayback.mp4",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 310,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1adbf3e.915980c",
+        "type": "ui_media",
+        "z": "9b6aa7be.87d5d8",
+        "d": true,
+        "group": "",
+        "name": "",
+        "width": 7,
+        "height": 4,
+        "order": 2,
+        "category": "IMH",
+        "file": "logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 270,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "706a4646.eb62d8",
+        "type": "ui_media",
+        "z": "9b6aa7be.87d5d8",
+        "group": "7eea39b5.8795f8",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 0,
+        "category": "QR",
+        "file": "Marcador.png",
+        "layout": "side",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 230,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5948907.b43ab8",
+        "type": "ui_chart",
+        "z": "9b6aa7be.87d5d8",
+        "d": true,
+        "name": "Ruido",
+        "group": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Ruido (dB)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5de22bc.7c62e",
+        "type": "ui_led",
+        "z": "9b6aa7be.87d5d8",
+        "d": true,
+        "group": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Ruido On/Off",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "",
+        "x": 1010,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "693bb032.1c57",
+        "type": "inject",
+        "z": "1cf6d477.59981c",
+        "name": "Ver",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "4681460c.871958",
+                "9286beca.2c9cf",
+                "3f8cad83.1ad062"
+            ]
+        ]
+    },
+    {
+        "id": "4681460c.871958",
+        "type": "particle-SSE",
+        "z": "1cf6d477.59981c",
+        "pcloud": "2687d3d0.301b54",
+        "subscribetype": "devid",
+        "devprodslug": "e00fce68d503cd57cf4fd99e",
+        "devid": "",
+        "evtname": "",
+        "strict": false,
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "9cb540ce.55a31",
+                "4dc87fcb.dd97a",
+                "2d1986c.a87077a"
+            ]
+        ]
+    },
+    {
+        "id": "9cb540ce.55a31",
+        "type": "debug",
+        "z": "1cf6d477.59981c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4dc87fcb.dd97a",
+        "type": "function",
+        "z": "1cf6d477.59981c",
+        "name": "Obtencion de datos",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar msg6={};\n\n\nif(msg.payload.name && msg.payload.name==\"Temperatura\"){\n\nmsg1.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[msg1,null,null]; \n\n}\n\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\n\nmsg2.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[null,msg2,null]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"spark/status\"){\n\n    if(msg.payload.data==\"online\"){\n        \n        msg3.payload=true; \n        \n    }else if(msg.payload.data==\"offline\"){\n\n        msg3.payload=false;\n    }\n\nreturn[null,null,msg3]; \n}\n\n//Añadido\nif(msg.payload.name && msg.payload.name==\"eCO2\"){\n\nmsg4.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg4.topic=\"Line1\";\n\nreturn[null, null, null, msg4]; \n}\n\nif(msg.payload.name && msg.payload.name==\"TVOC\"){\n\nmsg5.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg5.topic=\"Line2\";\n\nreturn[null,null, null, null, msg5]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"Noise\"){\n\nmsg6.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg6.topic=\"Line2\";\n\nreturn[null,null, null, null, null, msg6]; \n}\n",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 340,
+        "wires": [
+            [
+                "9e2d1090.087f7"
+            ],
+            [
+                "9e2d1090.087f7"
+            ],
+            [
+                "9e2d1090.087f7"
+            ],
+            [],
+            [],
+            []
+        ],
+        "outputLabels": [
+            "Temperatura",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "9e2d1090.087f7",
+        "type": "debug",
+        "z": "1cf6d477.59981c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c43fa6ca.6d8878",
+        "type": "e-mail",
+        "z": "1cf6d477.59981c",
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "secure": false,
+        "tls": true,
+        "name": "iarakis@kaixo.com",
+        "dname": "Enviar Email",
+        "x": 1080,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "2d1986c.a87077a",
+        "type": "function",
+        "z": "1cf6d477.59981c",
+        "name": "Si la humedad es > 45%",
+        "func": "// Envío de aviso al email por porcentaje de humedad mayor al 45% establecido\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\nvar humidity=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n if(humidity>45){\n\n        msg.payload=\"La humedad está por encima de \"+humidity+\"%\"; \n        msg.to=\"inaki.rubio.imh@gmail.com\";\n        msg.topic=\"Aviso: Porcentaje elevado de humedad en el ambiente\";\n        return msg;\n    }\n  \n  \n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 840,
+        "y": 480,
+        "wires": [
+            [
+                "c43fa6ca.6d8878"
+            ]
+        ]
+    },
+    {
+        "id": "3f8cad83.1ad062",
+        "type": "worldmap",
+        "z": "1cf6d477.59981c",
+        "name": "",
+        "lat": "43.21119675245933",
+        "lon": "-2.4101709825514255",
+        "zoom": "10",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "hiderightclick": "false",
+        "coords": "none",
+        "path": "",
+        "x": 320,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "97ac994.a1b8d68",
+        "type": "ui_template",
+        "z": "1cf6d477.59981c",
+        "group": "cd81d08b.eebb3",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "6",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9286beca.2c9cf",
+        "type": "template",
+        "z": "1cf6d477.59981c",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" height=300px ></iframe>",
+        "x": 490,
+        "y": 700,
+        "wires": [
+            [
+                "97ac994.a1b8d68"
+            ]
+        ]
+    },
+    {
+        "id": "cc67456d.af6478",
+        "type": "inject",
+        "z": "c862be7c.7b62a",
+        "name": "Ver",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "73e3def0.586bb",
+                "77082f7c.b3101",
+                "525152fa.706b3c"
+            ]
+        ]
+    },
+    {
+        "id": "73e3def0.586bb",
+        "type": "particle-SSE",
+        "z": "c862be7c.7b62a",
+        "pcloud": "2687d3d0.301b54",
+        "subscribetype": "devid",
+        "devprodslug": "e00fce68d503cd57cf4fd99e",
+        "devid": "",
+        "evtname": "",
+        "strict": false,
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "ec4e6aa7.a90f88",
+                "cbb0d6a8.6ea938",
+                "8e02c9ab.bdd678"
+            ]
+        ]
+    },
+    {
+        "id": "ec4e6aa7.a90f88",
+        "type": "debug",
+        "z": "c862be7c.7b62a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cbb0d6a8.6ea938",
+        "type": "function",
+        "z": "c862be7c.7b62a",
+        "name": "Obtencion de datos",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar msg6={};\n\n\nif(msg.payload.name && msg.payload.name==\"Temperatura\"){\n\nmsg1.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[msg1,null,null]; \n\n}\n\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\n\nmsg2.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[null,msg2,null]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"spark/status\"){\n\n    if(msg.payload.data==\"online\"){\n        \n        msg3.payload=true; \n        \n    }else if(msg.payload.data==\"offline\"){\n\n        msg3.payload=false;\n    }\n\nreturn[null,null,msg3]; \n}\n\n//Añadido\nif(msg.payload.name && msg.payload.name==\"eCO2\"){\n\nmsg4.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg4.topic=\"Line1\";\n\nreturn[null, null, null, msg4]; \n}\n\nif(msg.payload.name && msg.payload.name==\"TVOC\"){\n\nmsg5.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg5.topic=\"Line2\";\n\nreturn[null,null, null, null, msg5]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"Noise\"){\n\nmsg6.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg6.topic=\"Line2\";\n\nreturn[null,null, null, null, null, msg6]; \n}\n",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1060,
+        "y": 400,
+        "wires": [
+            [
+                "15f78664.fc5bba",
+                "47677439.dd46ac"
+            ],
+            [
+                "41e57140.02b83",
+                "47677439.dd46ac"
+            ],
+            [
+                "17244487.560f3b",
+                "47677439.dd46ac"
+            ],
+            [
+                "75bb7647.7f15b8"
+            ],
+            [
+                "2e4e789a.74a798"
+            ],
+            [
+                "8e7a33cf.179da"
+            ]
+        ],
+        "outputLabels": [
+            "Temperatura",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "17244487.560f3b",
+        "type": "ui_led",
+        "z": "c862be7c.7b62a",
+        "group": "f7c6af99.2e335",
+        "order": 6,
+        "width": 11,
+        "height": 1,
+        "label": "Status del Dispositivo",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED",
+        "x": 1500,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2e4e789a.74a798",
+        "type": "ui_chart",
+        "z": "c862be7c.7b62a",
+        "name": "TVOC.",
+        "group": "f7c6af99.2e335",
+        "order": 12,
+        "width": 12,
+        "height": 5,
+        "label": "tVOC (PPM.)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1500,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47677439.dd46ac",
+        "type": "debug",
+        "z": "c862be7c.7b62a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "77082f7c.b3101",
+        "type": "ui_media",
+        "z": "c862be7c.7b62a",
+        "group": "f7c6af99.2e335",
+        "name": "Media 7",
+        "width": 6,
+        "height": 3,
+        "order": 1,
+        "category": "IMH",
+        "file": "logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 460,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2caf27ac.8de048",
+        "type": "e-mail",
+        "z": "c862be7c.7b62a",
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "secure": false,
+        "tls": true,
+        "name": "inaki.rubio.imh@gmail.com",
+        "dname": "Enviar Email",
+        "x": 1100,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "8e02c9ab.bdd678",
+        "type": "function",
+        "z": "c862be7c.7b62a",
+        "name": "Si la humedad es > 70%",
+        "func": "// Envío de aviso al email por porcentaje de humedad mayor al 45% establecido\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\nvar humidity=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n if(humidity>70){\n\n        msg.payload=\"La humedad está por encima de \"+humidity+\"%\"; \n        msg.to=\"inaki.rubio.imh@gmail.com\";\n        msg.topic=\"Aviso: Porcentaje elevado de humedad en el ambiente\";\n        return msg;\n    }\n  \n  \n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 540,
+        "wires": [
+            [
+                "2caf27ac.8de048"
+            ]
+        ]
+    },
+    {
+        "id": "6d88197.3cbade8",
+        "type": "worldmap",
+        "z": "6e4aba31.18a674",
+        "name": "",
+        "lat": "43.211212411588654",
+        "lon": "-2.4101066156201254",
+        "zoom": "4",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "hiderightclick": "false",
+        "coords": "none",
+        "path": "",
+        "x": 1090,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5c3cec71.70ddf4",
+        "type": "inject",
+        "z": "6e4aba31.18a674",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 670,
+        "y": 380,
+        "wires": [
+            [
+                "aeb5ac67.71d48",
+                "6d88197.3cbade8"
+            ]
+        ]
+    },
+    {
+        "id": "aeb5ac67.71d48",
+        "type": "template",
+        "z": "6e4aba31.18a674",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" height=800px ></iframe>",
+        "x": 800,
+        "y": 480,
+        "wires": [
+            [
+                "c1194bae.7862c8"
+            ]
+        ]
+    },
+    {
+        "id": "d05a8298.c8ae2",
+        "type": "inject",
+        "z": "ea3090fc.fa2968",
+        "name": "Ver",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "e746cc4e.4db39",
+                "1c4152a.e0fd72d"
+            ]
+        ]
+    },
+    {
+        "id": "e746cc4e.4db39",
+        "type": "particle-SSE",
+        "z": "ea3090fc.fa2968",
+        "pcloud": "2687d3d0.301b54",
+        "subscribetype": "devid",
+        "devprodslug": "e00fce68d503cd57cf4fd99e",
+        "devid": "",
+        "evtname": "",
+        "strict": false,
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "94b06f93.b8db18",
+                "6b4ac6c2.098538",
+                "881c32de.c8997"
+            ]
+        ]
+    },
+    {
+        "id": "881c32de.c8997",
+        "type": "function",
+        "z": "ea3090fc.fa2968",
+        "name": "Si la humedad es > 45%",
+        "func": "// Envío de aviso al email por porcentaje de humedad mayor al 45% establecido\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\nvar humidity=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n if(humidity>45){\n\n        msg.payload=\"La humedad está por encima de \"+humidity+\"%\"; \n        msg.to=\"inaki.rubio.imh@gmail.com\";\n        msg.topic=\"Aviso: Porcentaje elevado de humedad en el ambiente\";\n        return msg;\n    }\n  \n  \n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 780,
+        "y": 560,
+        "wires": [
+            [
+                "e2ec17f3.72b33"
+            ]
+        ]
+    },
+    {
+        "id": "6b4ac6c2.098538",
+        "type": "function",
+        "z": "ea3090fc.fa2968",
+        "name": "Obtencion de datos",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar msg6={};\n\n\nif(msg.payload.name && msg.payload.name==\"Temperatura\"){\n\nmsg1.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[msg1,null,null]; \n\n}\n\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\n\nmsg2.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[null,msg2,null]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"spark/status\"){\n\n    if(msg.payload.data==\"online\"){\n        \n        msg3.payload=true; \n        \n    }else if(msg.payload.data==\"offline\"){\n\n        msg3.payload=false;\n    }\n\nreturn[null,null,msg3]; \n}\n\n//Añadido\nif(msg.payload.name && msg.payload.name==\"eCO2\"){\n\nmsg4.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg4.topic=\"Line1\";\n\nreturn[null, null, null, msg4]; \n}\n\nif(msg.payload.name && msg.payload.name==\"TVOC\"){\n\nmsg5.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg5.topic=\"Line2\";\n\nreturn[null,null, null, null, msg5]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"Noise\"){\n\nmsg6.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg6.topic=\"Line2\";\n\nreturn[null,null, null, null, null, msg6]; \n}\n",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 980,
+        "y": 420,
+        "wires": [
+            [
+                "fb94a245.82d248",
+                "871167cb.2643f8",
+                "968beca2.f43dd8"
+            ],
+            [
+                "794afc7d.d05cd4",
+                "871167cb.2643f8",
+                "369c5f7b.1ef518"
+            ],
+            [
+                "5cf44ba7.24b8f4",
+                "871167cb.2643f8"
+            ],
+            [
+                "f010bbea.892e6",
+                "43f21eba.38ef48"
+            ],
+            [
+                "e1071d83.579d68",
+                "2588bc74.8335f4"
+            ],
+            [
+                "f6e4fc49.f81a28",
+                "27a44ae.68b2b36"
+            ]
+        ],
+        "outputLabels": [
+            "Temperatura",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "94b06f93.b8db18",
+        "type": "debug",
+        "z": "ea3090fc.fa2968",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "871167cb.2643f8",
+        "type": "debug",
+        "z": "ea3090fc.fa2968",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fb94a245.82d248",
+        "type": "ui_gauge",
+        "z": "ea3090fc.fa2968",
+        "name": "Temperatura (gauge)",
+        "group": "a936c760.9e0ba",
+        "order": 9,
+        "width": 3,
+        "height": 3,
+        "gtype": "donut",
+        "title": "Temperatura (ºC)",
+        "label": "Grados Celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "x": 1520,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "794afc7d.d05cd4",
+        "type": "ui_chart",
+        "z": "ea3090fc.fa2968",
+        "name": "Humedad (gráfica)",
+        "group": "a936c760.9e0ba",
+        "order": 10,
+        "width": 15,
+        "height": 4,
+        "label": "Humedad (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Information should be seen soon",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2680c0",
+            "#aec7e8",
+            "#ea8b39",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1490,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f010bbea.892e6",
+        "type": "ui_chart",
+        "z": "ea3090fc.fa2968",
+        "name": "Calidad del aire (gráfico)",
+        "group": "a936c760.9e0ba",
+        "order": 11,
+        "width": 15,
+        "height": 4,
+        "label": "eCO2 (%)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1550,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6e4fc49.f81a28",
+        "type": "ui_gauge",
+        "z": "ea3090fc.fa2968",
+        "name": "Ruido (gauge)",
+        "group": "a936c760.9e0ba",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "donut",
+        "title": "Ruido (dB.)",
+        "label": "Decibelios",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "140",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "95",
+        "seg2": "115",
+        "x": 1480,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "e2ec17f3.72b33",
+        "type": "e-mail",
+        "z": "ea3090fc.fa2968",
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "secure": false,
+        "tls": true,
+        "name": "iarakis@kaixo.com",
+        "dname": "Enviar Email",
+        "x": 1020,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "15f78664.fc5bba",
+        "type": "ui_gauge",
+        "z": "c862be7c.7b62a",
+        "name": "Temperatura.",
+        "group": "f7c6af99.2e335",
+        "order": 9,
+        "width": 12,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Temperatura (ºC)",
+        "label": "Grados Celsius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "x": 1420,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "41e57140.02b83",
+        "type": "ui_chart",
+        "z": "c862be7c.7b62a",
+        "name": "Humedad.",
+        "group": "f7c6af99.2e335",
+        "order": 13,
+        "width": 12,
+        "height": 5,
+        "label": "Humedad (%. )",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Information should be seen soon",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2680c0",
+            "#aec7e8",
+            "#ea8b39",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1520,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75bb7647.7f15b8",
+        "type": "ui_chart",
+        "z": "c862be7c.7b62a",
+        "name": "eCO2.",
+        "group": "f7c6af99.2e335",
+        "order": 11,
+        "width": 12,
+        "height": 5,
+        "label": "eCO2 (PPM.)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1500,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e7a33cf.179da",
+        "type": "ui_gauge",
+        "z": "c862be7c.7b62a",
+        "name": "",
+        "group": "f7c6af99.2e335",
+        "order": 10,
+        "width": 12,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Ruido (dB.)",
+        "label": "Decibelios",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "140",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "95",
+        "seg2": "115",
+        "x": 1520,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c1194bae.7862c8",
+        "type": "ui_template",
+        "z": "6e4aba31.18a674",
+        "group": "f7c6af99.2e335",
+        "name": "",
+        "order": 8,
+        "width": 12,
+        "height": 4,
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 970,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c4152a.e0fd72d",
+        "type": "ui_media",
+        "z": "ea3090fc.fa2968",
+        "group": "a936c760.9e0ba",
+        "name": "Media 7",
+        "width": 5,
+        "height": 2,
+        "order": 1,
+        "category": "IMH",
+        "file": "logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cf44ba7.24b8f4",
+        "type": "ui_led",
+        "z": "ea3090fc.fa2968",
+        "group": "a936c760.9e0ba",
+        "order": 3,
+        "width": 4,
+        "height": 2,
+        "label": "Status del Dispositivo",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED",
+        "x": 1470,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e1071d83.579d68",
+        "type": "ui_chart",
+        "z": "ea3090fc.fa2968",
+        "name": "Partículas volátiles (gráfico)",
+        "group": "a936c760.9e0ba",
+        "order": 12,
+        "width": 15,
+        "height": 4,
+        "label": "tVOC (PPM.)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1520,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "177faa69.83c6f6",
+        "type": "inject",
+        "z": "a56b9ad4.168708",
+        "name": "True",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "5411ac05.ddc104",
+                "d551d537.0ad118",
+                "4f91c3f8.f77dac"
+            ]
+        ]
+    },
+    {
+        "id": "17d21353.c3294d",
+        "type": "function",
+        "z": "a56b9ad4.168708",
+        "name": "Obtencion de datos",
+        "func": "var msg1={};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nvar msg5={};\nvar msg6={};\n\n\nif(msg.payload.name && msg.payload.name==\"Temperatura\"){\n\nmsg1.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[msg1,null,null]; \n\n}\n\nif(msg.payload.name && msg.payload.name==\"Humedad\"){\n\nmsg2.payload=Math.floor(parseFloat(msg.payload.data).toFixed(2));\n\nreturn[null,msg2,null]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"spark/status\"){\n\n    if(msg.payload.data==\"online\"){\n        \n        msg3.payload=true; \n        \n    }else if(msg.payload.data==\"offline\"){\n\n        msg3.payload=false;\n    }\n\nreturn[null,null,msg3]; \n}\n\n//Añadido\nif(msg.payload.name && msg.payload.name==\"eCO2\"){\n\nmsg4.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg4.topic=\"Line1\";\n\nreturn[null, null, null, msg4]; \n}\n\nif(msg.payload.name && msg.payload.name==\"TVOC\"){\n\nmsg5.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg5.topic=\"Line2\";\n\nreturn[null,null, null, null, msg5]; \n}\n\n\nif(msg.payload.name && msg.payload.name==\"Noise\"){\n\nmsg6.payload=Math.floor(parseInt(msg.payload.data).toFixed(2));\n//msg6.topic=\"Line2\";\n\nreturn[null,null, null, null, null, msg6]; \n}\n",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "fc7b34a1.e0f9e8"
+            ],
+            [
+                "215360c3.07782"
+            ],
+            [
+                "7527fc03.9ff964"
+            ],
+            [
+                "b62a39b0.b224f8"
+            ],
+            [
+                "474a9368.1374ac"
+            ],
+            [
+                "57198866.5dbea8"
+            ]
+        ]
+    },
+    {
+        "id": "fc7b34a1.e0f9e8",
+        "type": "ui_gauge",
+        "z": "a56b9ad4.168708",
+        "name": "",
+        "group": "261c187b.09bbe8",
+        "order": 5,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "30",
+        "x": 1170,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d551d537.0ad118",
+        "type": "ui_media",
+        "z": "a56b9ad4.168708",
+        "group": "261c187b.09bbe8",
+        "name": "LOGO IMH",
+        "width": 5,
+        "height": 1,
+        "order": 1,
+        "category": "IMH",
+        "file": "logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 330,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5411ac05.ddc104",
+        "type": "particle-SSE",
+        "z": "a56b9ad4.168708",
+        "pcloud": "2687d3d0.301b54",
+        "subscribetype": "devid",
+        "devprodslug": "e00fce68d503cd57cf4fd99e",
+        "devid": "",
+        "evtname": "",
+        "strict": 0,
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "17d21353.c3294d"
+            ]
+        ]
+    },
+    {
+        "id": "57198866.5dbea8",
+        "type": "ui_gauge",
+        "z": "a56b9ad4.168708",
+        "name": "Ruido",
+        "group": "261c187b.09bbe8",
+        "order": 23,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "Ruido",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1150,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "7527fc03.9ff964",
+        "type": "ui_led",
+        "z": "a56b9ad4.168708",
+        "group": "261c187b.09bbe8",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "",
+        "x": 1150,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "302987f5.75f7c8",
+        "type": "debug",
+        "z": "a56b9ad4.168708",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "369c5f7b.1ef518",
+        "type": "ui_gauge",
+        "z": "ea3090fc.fa2968",
+        "name": "Humedad (gauge)",
+        "group": "a936c760.9e0ba",
+        "order": 7,
+        "width": 3,
+        "height": 3,
+        "gtype": "donut",
+        "title": "Humedad (%)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1490,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "43f21eba.38ef48",
+        "type": "ui_gauge",
+        "z": "ea3090fc.fa2968",
+        "name": "Calidad del aire (gauge)",
+        "group": "a936c760.9e0ba",
+        "order": 6,
+        "width": 3,
+        "height": 3,
+        "gtype": "donut",
+        "title": "CO2 (%)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1550,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2588bc74.8335f4",
+        "type": "ui_gauge",
+        "z": "ea3090fc.fa2968",
+        "name": "TVOC (gauge)",
+        "group": "a936c760.9e0ba",
+        "order": 8,
+        "width": 3,
+        "height": 3,
+        "gtype": "donut",
+        "title": "tVOC (PPM.)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1480,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "968beca2.f43dd8",
+        "type": "ui_chart",
+        "z": "ea3090fc.fa2968",
+        "name": "Temperatura (gráfico)",
+        "group": "a936c760.9e0ba",
+        "order": 13,
+        "width": 15,
+        "height": 4,
+        "label": "Tempertura (ºC)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1520,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27a44ae.68b2b36",
+        "type": "ui_chart",
+        "z": "ea3090fc.fa2968",
+        "name": "Ruido (gráfico)",
+        "group": "a936c760.9e0ba",
+        "order": 14,
+        "width": 15,
+        "height": 4,
+        "label": "Ruido (dB)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1480,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45830a22.852ed4",
+        "type": "worldmap in",
+        "z": "ea3090fc.fa2968",
+        "name": "",
+        "path": "/worldmap",
+        "events": "files",
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "97e5364b.1d7638"
+            ]
+        ]
+    },
+    {
+        "id": "97e5364b.1d7638",
+        "type": "worldmap",
+        "z": "ea3090fc.fa2968",
+        "name": "",
+        "lat": "43.21096",
+        "lon": "-2.40999",
+        "zoom": "18",
+        "layer": "",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "x": 540,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "215360c3.07782",
+        "type": "ui_gauge",
+        "z": "a56b9ad4.168708",
+        "name": "Humedad",
+        "group": "261c187b.09bbe8",
+        "order": 7,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "Humedad",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "30",
+        "x": 1160,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b62a39b0.b224f8",
+        "type": "ui_gauge",
+        "z": "a56b9ad4.168708",
+        "name": "eCO2",
+        "group": "261c187b.09bbe8",
+        "order": 9,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "eCO2",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "30",
+        "x": 1150,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "474a9368.1374ac",
+        "type": "ui_gauge",
+        "z": "a56b9ad4.168708",
+        "name": "TVOC",
+        "group": "261c187b.09bbe8",
+        "order": 21,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "TVOC",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "30",
+        "x": 1150,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4f91c3f8.f77dac",
+        "type": "worldmap",
+        "z": "a56b9ad4.168708",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "x": 430,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "525152fa.706b3c",
+        "type": "ui_media",
+        "z": "c862be7c.7b62a",
+        "group": "f7c6af99.2e335",
+        "name": "Media 5",
+        "width": 5,
+        "height": "3",
+        "order": 2,
+        "category": "Social",
+        "file": "Social.JPG",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 520,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    }
+]
