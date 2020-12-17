@@ -31,7 +31,7 @@ while True:
             distance= sonar.ping(DigitalPin.P1, DigitalPin.P0, PingUnit.CENTIMETERS)
 
             #gigglebot.drive_straight(gigglebotWhichDriveDirection.FORWARD)
-            # Si la distamia es mayor a 15 cm el robot debe de evitar caerse 
+            # Si la distancia es mayor a 15 cm el robot debe de evitar caerse 
             # Se puede cambiar el comparador para que funcione en funcion de si tiene obstaculos adelante
             while distance<15:
                 #Lee ocnstantemente la distancia y gira hasta que la distancia sea menor significando que no esta al borde de la mesa
