@@ -1,0 +1,5 @@
+Todos los rachivos necesarios para compilar el codigo que funciona en el Gigglebot
+La programacion esta pensada para el uso de un sonar que va medir constantemente la distancia al suelo
+Cuando la distancia es mayor a los limites normales el robot va girar hasta encontrar una zona donde la distancia este en los parametros normales
+Ademas tiene implementaod el movimiento mediante el uso de los sensores de luz en el gigglebot asi que dpenediendo de que sensor detecta mayor iluminacion este se dirige hacia esa direccion
+y si la diferencia no es considerable el robot continua recto
