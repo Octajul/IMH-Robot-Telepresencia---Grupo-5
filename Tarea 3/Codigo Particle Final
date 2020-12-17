@@ -1,0 +1,154 @@
+// This #include statement was automatically added by the Particle IDE.
+#include <Adafruit_DHT.h>
+
+// This #include statement was automatically added by the Particle IDE.
+#include <Adafruit_CCS811.h>
+
+Adafruit_CCS811 ccs;
+/***************************************************************************
+  This is a library for the CCS811 air
+  This sketch reads the sensor
+  Designed specifically to work with the Adafruit CCS811 breakout
+  ----> http://www.adafruit.com/products/3566
+  These sensors use I2C to communicate. The device's I2C address is 0x5A
+  Adafruit invests time and resources providing this open source code,
+  please support Adafruit andopen-source hardware by purchasing products
+  from Adafruit!
+  Written by Dean Miller for Adafruit Industries.
+  BSD license, all text above must be included in any redistribution
+ ***************************************************************************/
+
+
+// Example testing sketch for various DHT humidity/temperature sensors
+// Written by Octajul, public domain
+
+#define DHTPIN 2     // what pin we're connected to
+
+// Uncomment whatever type you're using!
+#define DHTTYPE DHT11		// DHT 11 
+//#define DHTTYPE DHT22		// DHT 22 (AM2302)
+//#define DHTTYPE DHT21		// DHT 21 (AM2301)
+
+// Connect pin 1 (on the left) of the sensor to +5V
+// Connect pin 2 of the sensor to whatever your DHTPIN is
+// Connect pin 4 (on the right) of the sensor to GROUND
+// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+
+double c = 0;
+
+double v = 0;
+
+double h = 0;
+	
+double t = 0;
+
+double f = 0;
+
+double n = 0;
+double db = 0;
+
+DHT dht(DHTPIN, DHTTYPE);
+
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(A2, INPUT);
+  
+  
+  	 
+	Serial.println("DHTxx test!");
+	
+	
+Particle.variable ("temperature", t);
+Particle.variable ("humidity", h);
+Particle.variable ("eCO2", c);
+Particle.variable ("tVOC", v);
+Particle.variable ("Noise", n);
+
+
+
+	dht.begin();
+	
+		delay(2000);
+
+// Reading temperature or humidity takes about 250 milliseconds!
+// Sensor readings may also be up to 2 seconds 'old' (its a 
+// very slow sensor)
+ h = dht.getHumidity();
+// Read temperature as Celsius
+ t = dht.getTempCelcius();
+// db=analogRead(A2);
+
+  Serial.println("CCS811 test");
+
+  if(!ccs.begin()){
+    Serial.println("Failed to start sensor! Please check your wiring.");
+    while(1);
+  }
+
+  // Wait for the sensor to be ready
+  while(!ccs.available());
+  
+  
+  
+  
+}
+
+void loop() {
+  if(ccs.available()){
+    if(!ccs.readData()){
+      Serial.print("CO2: ");
+      Serial.print(ccs.geteCO2());
+      Serial.print("ppm, TVOC: ");
+      Serial.println(ccs.getTVOC());
+      
+      
+      
+      // Check if any reads failed and exit early (to try again).
+	if (isnan(h) || isnan(t) || isnan(f)) {
+		Serial.println("Failed to read from DHT sensor!");
+		return;
+	}
+
+// Compute heat index
+// Must send in temp in Fahrenheit!
+	float hi = dht.getHeatIndex();
+	float dp = dht.getDewPoint();
+	float k = dht.getTempKelvin();
+
+	Serial.print("Humid: "); 
+	Serial.print(h);
+	Serial.print("% - ");
+	Serial.print("Temp: "); 
+	Serial.print(t);
+	Serial.print("*C - ");
+//	Serial.print(k);
+//	Serial.print("*K - ");
+	Serial.print("DewP: ");
+	Serial.print(dp);
+	Serial.print("*C - ");
+//	Serial.print("HeatI: ");
+//	Serial.print(hi);
+//	Serial.println("*C - ");
+    db=analogRead(A2);
+    n= 20.0  * log10 (db  + 1.0);
+	Serial.println(Time.timeStr());
+	Particle.publish("Humedad", String(h));
+	Particle.publish("Noise", String(n));
+	Particle.publish("Temperatura", String(t));
+	Particle.publish("TVOC", String(ccs.getTVOC()));
+	delay(1000);
+	Particle.publish("eCO2", String(ccs.geteCO2()));
+	
+
+	
+	
+	delay(30000);
+    }
+    else{
+      Serial.println("ERROR!");
+      while(1);
+    }
+  }
+  delay(500);
+}
