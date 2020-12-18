@@ -26,7 +26,7 @@ Archivos CAD con modificaciones para uso del sonar y sensor
 <a href="https://www.imh.eus/eu" rel="some text">![Foo](https://imgur.com/CWoaKO0)</a>
 
 
-<a href="https://www.imh.eus/eu" rel="some text">![Foo](https://imgur.com/cs0sJwt)</a>
+<a href="https://www.imh.eus/eu" rel="some text">![Foo](https://i.imgur.com/cs0sJwt.jpg)</a>
 
 
 Programación de Python para medir distancia de componentes con vision artificial
