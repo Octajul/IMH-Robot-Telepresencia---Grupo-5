@@ -41,6 +41,8 @@ Archivo .JSON con flows necesarios para la visualización del Dashboard
 
 Codigo en control IO y video de funcionamiento 
 
+<a href="https://public.tableau.com/profile/i.aki.rubio#!/vizhome/Tarea662/Dashboard1?publish=yes" rel="some text">![Foo](https://i.imgur.com/sVijgPE.jpg)</a>
+
 ## Tarea 5 :
 
 Links para visualización de Dashboards Online en Tableau Public de datos obtenidos por los sensores 
