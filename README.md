@@ -23,7 +23,7 @@ Archivos CAD con modificaciones para uso del sonar y sensor
 [![IMAGEN NOSE](Tarea 2/nose_v1 v2.stl)](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/blob/master/Tarea%202/nose_v1%20v2.stl)
 
 
-<a href="https://www.imh.eus/eu" rel="some text">![Foo](https://imgur.com/CWoaKO0)</a>
+<a href="https://www.imh.eus/eu" rel="some text">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
 
 <a href="https://www.imh.eus/eu" rel="some text">![Foo](https://i.imgur.com/cs0sJwt.jpg)</a>
