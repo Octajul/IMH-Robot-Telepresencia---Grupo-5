@@ -94,7 +94,9 @@ Flow 3 se encarga de mostrar los datos desplegados de los sensores del robot de 
 //	Serial.print("HeatI: ");
 //	Serial.print(hi);
 //	Serial.println("*C - ");
+// Lectura del pin analogico A2 donde esta conectado el microfono
     db=analogRead(A2);
+// Se convierte el valor analogico en dB
     n= 20.0  * log10 (db  + 1.0);
 	Serial.println(Time.timeStr());
 	Particle.publish("Humedad", String(h));
