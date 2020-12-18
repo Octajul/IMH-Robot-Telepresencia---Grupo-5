@@ -12,9 +12,9 @@
 #Integrantes: Aitor, Iñaki & Julio Gonzalez
 
 ## Tarea 1 :
+[Carpeta Tarea 1](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%201)
 
 Codigo de Python para el funcionamiento de Gigglebot
-
 
 ```python
 while True:
@@ -52,6 +52,7 @@ while True:
 ```
  
 ## Tarea 2 : 
+[Carpeta Tarea 2](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%202)
 
 Archivos CAD con modificaciones para uso del sonar y sensor
 
@@ -64,12 +65,14 @@ Archivos CAD con modificaciones para uso del sonar y sensor
 Programación de Python para medir distancia de componentes con vision artificial
 
 ## Tarea 3 : 
+[Carpeta Tarea 3](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%203)
 
 Código de Particle para la obtención de datos por parte del sensor y su transmisión para el uso en Red Node
 
 Archivo .JSON con flows necesarios para la visualización del Dashboard
 
 ## Tarea 4 : 
+[Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
 
 Codigo en control IO y video de funcionamiento 
 
@@ -77,6 +80,7 @@ Codigo en control IO y video de funcionamiento
 " rel="some text">![Foo](https://i.imgur.com/sVijgPE.jpg)</a>
 
 ## Tarea 5 :
+[Carpeta Tarea 5](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%205)
 
 Links para visualización de Dashboards Online en Tableau Public de datos obtenidos por los sensores 
 
