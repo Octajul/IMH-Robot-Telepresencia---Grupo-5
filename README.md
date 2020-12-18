@@ -73,6 +73,38 @@ En este folder está el código de Particle y los archivos JSON de RED Node con 
 Flow 1 Es para colocar un mapa en la pestaña IMH Robot Telepresencia
 Flow 3 se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia
 
+```cpp
+/ Compute heat index
+// Must send in temp in Fahrenheit!
+	float hi = dht.getHeatIndex();
+	float dp = dht.getDewPoint();
+	float k = dht.getTempKelvin();
+
+	Serial.print("Humid: "); 
+	Serial.print(h);
+	Serial.print("% - ");
+	Serial.print("Temp: "); 
+	Serial.print(t);
+	Serial.print("*C - ");
+//	Serial.print(k);
+//	Serial.print("*K - ");
+	Serial.print("DewP: ");
+	Serial.print(dp);
+	Serial.print("*C - ");
+//	Serial.print("HeatI: ");
+//	Serial.print(hi);
+//	Serial.println("*C - ");
+    db=analogRead(A2);
+    n= 20.0  * log10 (db  + 1.0);
+	Serial.println(Time.timeStr());
+	Particle.publish("Humedad", String(h));
+	Particle.publish("Noise", String(n));
+	Particle.publish("Temperatura", String(t));
+	Particle.publish("TVOC", String(ccs.getTVOC()));
+	delay(1000);
+	Particle.publish("eCO2", String(ccs.geteCO2()));
+```
+
 
 ## Tarea 4 : 
 [Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
