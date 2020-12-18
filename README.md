@@ -59,10 +59,8 @@ Archivos CAD con modificaciones para uso del sonar y sensor
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/Back%20V2.0.stl">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
 
-<a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/nose_v1%20v2.stl">![Foo](https://i.imgur.com/cs0sJwt.jpg)</a>
+<a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/nose_v1%20v2.stl">![Foo](https://i.imgur.com/UnobRzq.jpg)</a>
 
-
-Programación de Python para medir distancia de componentes con vision artificial
 
 ## Tarea 3 : 
 [Carpeta Tarea 3](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%203)
