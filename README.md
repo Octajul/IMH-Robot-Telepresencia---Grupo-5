@@ -6,16 +6,18 @@
 <a href="https://www.imh.eus/eu" rel="some text">![Foo](https://media-exp1.licdn.com/dms/image/C4D0BAQFpuzjCUj95cg/company-logo_200_200/0/1579542289894?e=2159024400&v=beta&t=MqzIGMRqGZ4diQz7Y4T1qaaIh0YsdYIQdwPKU6zvWMQ)</a>
 
 
->Se llevaron a cabo 5 tareas distintas que se pueden ver en el repositorio en cada carpeta
+>Se llevaron a cabo 5 tareas distintas que pueden apreciarse individualmente en cada carpeta del repositorio o accediendo a ellas mediante enlaces que se facilitan a continuación. En el siguiente archi "Readme", se resume el contenido de cada tarea y se aportan imágenes o códigos que facilitan su comprensión.
 
-
-#Integrantes: Aitor, Iñaki & Julio Gonzalez
+#Integrantes: Aitor, Iñaki & Julio Gonzalez.
 
 ## Tarea 1 :
 [Carpeta Tarea 1](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%201)
 
-Codigo de Python para el funcionamiento de Gigglebot
-
+La primera tarea está orientada a crear un código que permita el movimiento controlado del GiggleBot y le indique detenerse en el extremo de una superficie, así como evitar su caída.
+En este caso, se ha optado por dirigir el robot a través de sensores de luminosidad que captan la luz emitida por un dispositivo, como podría ser el flash del teléfono móvil. Estableciendo un diferencial de 100 entre los valores recogidos por cada sensor (derecho o izquierdo), el robot distingue si debe girar a la derecha o la izquierda, o sin embargo, seguir recto si la diferencia entre valores es menor a 100.
+Adicionalmente, para evitar la caída del bot, un sensor de ultrasonidos conectado al microcontrolador mide constantemente la distancia que lo separada del suelo sobre el que se mueve y cuando esta distancia supero los 15cm, el robot gira hasta que esta distancia se convierte en menor a 15cm. 
+Tras esquivar la caida, el bot continúa siendo guiado a través de los sensores lumínicos.
+A continuación se muestra el fragmento del código más representativo del funcionamiento del GiggleBot, que demuestra los explicado previamente:
 ```python
 while True:
            
@@ -54,10 +56,12 @@ while True:
 ## Tarea 2 : 
 [Carpeta Tarea 2](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%202)
 
-Archivos CAD con modificaciones para uso del sonar y sensor
+Para permitir alojar el sensor AmbiMate que recoge datos de CO2 del ambiente, el archivo CAD ha sido modificado de forma que el sensor sería incorporado en su interior y conectado al microcontrolador del bot. Cabe destacar, que debido a las exigencias de funcionamiento del robot, se ha optado por recortar dos ventanas longitudinales laterales en la parte trasera, que permiten a los sensores lumínicos del bot percibir intensidad de luz.
 
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/Back%20V2.0.stl">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
+
+En cuanto a la parte delantera (nose), se ha escogido realizar dos orificios al material que facilitan alojan el sensore de ultrasonidos de manera estética, ya que simulan los faros de un automóvil maximizando su funcionalidad.
 
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/UM2_nose_v1%20v4.stl">![Foo](https://i.imgur.com/UnobRzq.jpg)</a>
 
@@ -65,13 +69,7 @@ Archivos CAD con modificaciones para uso del sonar y sensor
 ## Tarea 3 : 
 [Carpeta Tarea 3](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%203)
 
-Código de Particle para la obtención de datos por parte del sensor y su transmisión para el uso en Red Node
-
-Archivo .JSON con flows necesarios para la visualización del Dashboard
-
-En este folder está el código de Particle y los archivos JSON de RED Node con los que se han creado las pestañas Flow 1 y Flow 3
-Flow 1 Es para colocar un mapa en la pestaña IMH Robot Telepresencia
-Flow 3 se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia
+La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la obtención de datos por parte del sensor y su transmisión a la placa DHT. Como se muestra en el fragmento de código a continuación, el programa recoge el dato de ruido en valor analógico y una fórmula convierte el valor recogido por el sensor alojado en el PIN2 adecibelios (dB). 
 
 ```cpp
 / Compute heat index
@@ -106,7 +104,16 @@ Flow 3 se encarga de mostrar los datos desplegados de los sensores del robot de 
 	delay(1000);
 	Particle.publish("eCO2", String(ccs.geteCO2()));
 ```
+Además de ruido, sensores también recogen datos sobre las siguientes magnitudes que son críticas en la fabricación de componentes plásticos mediante fabricación aditiva (FDM):
+-Temperatura (ºC)
+-Humedad (%)
+-Presencia de CO2 (PPM)
+-Calidad de aire (PPM)
 
+Para la visualización de estos valores recogidos por los sensores, el código de Particle deben ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
+-Flow 1: Es para colocar un mapa en el dashboard "IMH Robot Telepresencia"
+-Flow 3:Se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia en el dashboard mencionado. 
+Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciarse clicando en el enlace habilitado para acceder a la carpeta referente a la Tarea 3 del repositorio. 
 
 ## Tarea 4 : 
 [Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
