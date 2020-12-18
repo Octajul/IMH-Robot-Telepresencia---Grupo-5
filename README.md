@@ -73,7 +73,16 @@ En cuanto a la parte delantera (nose), se ha escogido realizar dos orificios al 
 ## Tarea 3 : 
 [Carpeta Tarea 3](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%203)
 
-La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la obtención de datos por parte del sensor y su transmisión a la placa DHT. Como se muestra en el fragmento de código a continuación, el programa recoge el dato de ruido en valor analógico y una fórmula convierte el valor recogido por el sensor alojado en el PIN2 a decibelios (dB). 
+La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la obtención de datos por parte del sensor y su transmisión a la placa DHT. Como se muestra en el fragmento de código a continuación, el programa recoge el dato de ruido en valor analógico y una fórmula convierte el valor recogido por el sensor alojado en el PIN2 a decibelios (dB).
+
+Además del ruido, los sensores también recogen datos sobre las siguientes magnitudes que son críticas en la fabricación de componentes plásticos mediante fabricación aditiva (FDM):
+
+- Temperatura (ºC).
+- Humedad (%).
+- Presencia de CO2 (PPM).
+- Calidad de aire (PPM).
+
+
 
 ```cpp
 / Compute heat index
@@ -108,14 +117,6 @@ La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la 
 	delay(1000);
 	Particle.publish("eCO2", String(ccs.geteCO2()));
 ```
-Además de ruido, sensores también recogen datos sobre las siguientes magnitudes que son críticas en la fabricación de componentes plásticos mediante fabricación aditiva (FDM):
-
-
-- Temperatura (ºC).
-- Humedad (%).
-- Presencia de CO2 (PPM).
-- Calidad de aire (PPM).
-
 
 Para la visualización de estos valores recogidos por los sensores, el código de Particle debe ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
 
