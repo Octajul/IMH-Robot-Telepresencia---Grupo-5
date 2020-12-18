@@ -56,7 +56,7 @@ while True:
 
 Archivos CAD con modificaciones para uso del sonar y sensor
 
-<a href="https://www.imh.eus/eu" rel="some text">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
+<a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/Back%20V2.0.stl">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
 
 <a href="https://www.imh.eus/eu" rel="some text">![Foo](https://i.imgur.com/cs0sJwt.jpg)</a>
