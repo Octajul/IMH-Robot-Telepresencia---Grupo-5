@@ -7,13 +7,10 @@ distance=0
 basic.show_icon(IconNames.ASLEEP)
 #input.button_is_pressed(Button.A)
 #input.button_is_pressed(Button.B)
-
 #Parar el bot si estaba en movimiento
 gigglebot.stop()
-
 #Definir velocidad de movimiento de los motores
 gigglebot.set_speed(gigglebotWhichMotor.BOTH, 50)
-
 #Loop principal
 while True:
     #Definir accion si boton A se presiona
@@ -28,6 +25,7 @@ while True:
             right=gigglebot.light_read_sensor(gigglebotWhichTurnDirection.RIGHT)
             left=gigglebot.light_read_sensor(gigglebotWhichTurnDirection.LEFT)
             #Leer el valor en sentimetros del sonar deifniendo los pines en que esta conectado el sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.MICRO_SECONDS)
+            #Leer el valor en centímetros del sonar definiendo los pines en que esta conectado el sonar
             distance= sonar.ping(DigitalPin.P1, DigitalPin.P0, PingUnit.CENTIMETERS)
 
             #gigglebot.drive_straight(gigglebotWhichDriveDirection.FORWARD)
@@ -36,8 +34,12 @@ while True:
             while distance<15:
                 #Lee ocnstantemente la distancia y gira hasta que la distancia sea menor significando que no esta al borde de la mesa
                 distance= sonar.ping(DigitalPin.P1, DigitalPin.P0, PingUnit.CENTIMETERS)
+            # Se puede cambiar el comparador para que funcione en función de si tiene obstáculos delante
+            while distance>15:
+                #Lee constantemente la distancia y gira hasta que la distancia sea menor significando que no esta al borde de la mesa
                 gigglebot.gigglebot_spin(gigglebotWhichTurnDirection.RIGHT)
-                
+                distance= sonar.ping(DigitalPin.P1, DigitalPin.P0, PingUnit.CENTIMETERS)
+
             # Ver si un sensor capta mayor luz que el otro 
             #Si derecha capta mas que izquiera girar a la derecha
             if right > left+diff:
