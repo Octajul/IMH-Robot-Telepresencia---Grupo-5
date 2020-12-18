@@ -16,7 +16,7 @@
 La primera tarea está orientada a crear un código que permita el movimiento controlado del GiggleBot y le indique detenerse en el extremo de una superficie, así como evitar su caída.
 
 En este caso, se ha optado por dirigir el robot a través de sensores de luminosidad que captan la luz emitida por un dispositivo, como podría ser el flash del teléfono móvil. Estableciendo un diferencial de 100 entre los valores recogidos por cada sensor (derecho o izquierdo), el robot distingue si debe girar a la derecha o la izquierda, o sin embargo, seguir recto si la diferencia entre valores es menor a 100.
-Adicionalmente, para evitar la caída del bot, un sensor de ultrasonidos conectado al microcontrolador mide constantemente la distancia que lo separada del suelo sobre el que se mueve y cuando esta distancia supero los 15cm, el robot gira hasta que esta distancia se convierte en menor a 15cm. 
+Adicionalmente, para evitar la caída del bot, un sensor de ultrasonidos conectado al microcontrolador mide constantemente la distancia que lo separa de la superficie sobre la que se mueve y cuando supere la distancia de 15cm, el robot gira hasta que esta distancia sea menor a 15cm. 
 Tras esquivar la caida, el bot continúa siendo guiado a través de los sensores lumínicos.
 
 
@@ -64,7 +64,7 @@ Para permitir alojar el sensor AmbiMate que recoge datos de CO2 del ambiente, el
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/Back%20V2.0.stl">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
 
-En cuanto a la parte delantera (nose), se ha escogido realizar dos orificios al material que facilitan alojan el sensore de ultrasonidos de manera estética, ya que simulan los faros de un automóvil maximizando su funcionalidad.
+En cuanto a la parte delantera (nose), se ha escogido realizar dos orificios al material que facilitan alojar el sensor de ultrasonidos de manera estética, ya que simulan los faros de un automóvil maximizando su funcionalidad.
 
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/UM2_nose_v1%20v4.stl">![Foo](https://i.imgur.com/UnobRzq.jpg)</a>
 
@@ -72,7 +72,7 @@ En cuanto a la parte delantera (nose), se ha escogido realizar dos orificios al 
 ## Tarea 3 : 
 [Carpeta Tarea 3](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%203)
 
-La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la obtención de datos por parte del sensor y su transmisión a la placa DHT. Como se muestra en el fragmento de código a continuación, el programa recoge el dato de ruido en valor analógico y una fórmula convierte el valor recogido por el sensor alojado en el PIN2 adecibelios (dB). 
+La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la obtención de datos por parte del sensor y su transmisión a la placa DHT. Como se muestra en el fragmento de código a continuación, el programa recoge el dato de ruido en valor analógico y una fórmula convierte el valor recogido por el sensor alojado en el PIN2 a decibelios (dB). 
 
 ```cpp
 / Compute heat index
@@ -113,7 +113,7 @@ Además de ruido, sensores también recogen datos sobre las siguientes magnitude
 -Presencia de CO2 (PPM)
 -Calidad de aire (PPM)
 
-Para la visualización de estos valores recogidos por los sensores, el código de Particle deben ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
+Para la visualización de estos valores recogidos por los sensores, el código de Particle debe ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
 
 
 -Flow 1: Es para colocar un mapa en el dashboard "IMH Robot Telepresencia"
@@ -125,7 +125,7 @@ Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciars
 
 Para simular el proceso de distribución de los paquetes que contendrían los productos GiggleBot fabricados, se ha empelado la herramienta Factory IO. En esta, se ha escogido un escenario que clasificaría los pedidos dependiendo la altura del paquete, enviando los paquetes grandes a los contenedores de los rodillos derechos y los pequeños, sin embargo, a los contenedores del camino izquierdo. 
 
-Es resenable, que para la programación del escenario, no se ha utilizado la plantilla estándar básica disponible, si no que se ha optado por empezar desde 0 de manera autónoma y sin hacer uso de los recursos proporcionados, otorgando mayor singularidad al funcionamiento de la aplicación. Por ejemplo, se ha creadp una memoria FiFo (First In First Out) que va registrando el tamaño de cada uno de las cajas que se desplaza hacia la plataforma giratoria y al momento de que se retira la caja de la plataforma se borra y se registra una nueva caja.
+Es reseñable, que para la programación del escenario, no se ha utilizado la plantilla estándar básica disponible, si no que se ha optado por empezar desde 0 de manera autónoma y sin hacer uso de los recursos proporcionados, otorgando mayor singularidad al funcionamiento de la aplicación. Por ejemplo, se ha creadp una memoria FiFo (First In First Out) que va registrando el tamaño de cada uno de las cajas que se desplaza hacia la plataforma giratoria y al momento de que se retira la caja de la plataforma se borra y se registra una nueva caja.
 
 Además del código de Control IO para ejecutar el escenario en la aplicación de Factory IO, también se proporciona un enlace a LOOM que muestra no solo el esquema de automatización del escenario, si no también la ejecución de la simulación. 
 
