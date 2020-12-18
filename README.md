@@ -8,7 +8,7 @@
 
 >Se llevaron a cabo 5 tareas distintas que pueden apreciarse individualmente en cada carpeta del repositorio o accediendo a ellas mediante enlaces que se facilitan a continuación. En el siguiente archivo "Readme", se resume el contenido de cada tarea y se aportan imágenes o códigos que facilitan su comprensión.
 
-#Integrantes: Aitor, Iñaki & Julio Gonzalez.
+#Integrantes: Aitor Landaarroitajauregui, Iñaki Rubio & Julio Gonzalez.
 
 ## Tarea 1 :
 [Carpeta Tarea 1](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%201)
