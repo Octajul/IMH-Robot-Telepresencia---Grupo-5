@@ -6,7 +6,7 @@
 <a href="https://www.imh.eus/eu" rel="some text">![Foo](https://media-exp1.licdn.com/dms/image/C4D0BAQFpuzjCUj95cg/company-logo_200_200/0/1579542289894?e=2159024400&v=beta&t=MqzIGMRqGZ4diQz7Y4T1qaaIh0YsdYIQdwPKU6zvWMQ)</a>
 
 
->Se llevaron a cabo 5 tareas distintas que pueden apreciarse individualmente en cada carpeta del repositorio o accediendo a ellas mediante enlaces que se facilitan a continuación. En el siguiente archi "Readme", se resume el contenido de cada tarea y se aportan imágenes o códigos que facilitan su comprensión.
+>Se llevaron a cabo 5 tareas distintas que pueden apreciarse individualmente en cada carpeta del repositorio o accediendo a ellas mediante enlaces que se facilitan a continuación. En el siguiente archivo "Readme", se resume el contenido de cada tarea y se aportan imágenes o códigos que facilitan su comprensión.
 
 #Integrantes: Aitor, Iñaki & Julio Gonzalez.
 
