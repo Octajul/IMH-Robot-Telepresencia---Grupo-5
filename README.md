@@ -118,15 +118,20 @@ Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciars
 ## Tarea 4 : 
 [Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
 
-Codigo en control IO y video de funcionamiento 
+Para simular el proceso de distribución de los paquetes que contendrían los productos GiggleBot fabricados, se ha empelado la herramienta Factory IO. En esta, se ha escogido un escenario que clasificaría los pedidos dependiendo la altura del paquete, enviando los paquetes grandes a los contenedores de los rodillos derechos y los pequeños, sin embargo, a los contenedores del camino izquierdo. 
 
-<a href="https://www.loom.com/share/a17a02c4c28144f2a1f702cde04289af
+Es resenable, que para la programación del escenario, no se ha utilizado la plantilla estándar básica disponible, si no que se ha optado por empezar desde 0 de manera autónoma y sin hacer uso de los recursos proporcionados, otorgando mayor singularidad al funcionamiento de la aplicación. Por ejemplo, se ha creadp una memoria FiFo (First In First Out) que va registrando el tamaño de cada uno de las cajas que se desplaza hacia la plataforma giratoria y al momento de que se retira la caja de la plataforma se borra y se registra una nueva caja.
+
+Además del código de Control IO para ejecutar el escenario en la aplicación de Factory IO, también se proporciona un enlace a LOOM que muestra no solo el esquema de automatización del escenario, si no también la ejecución de la simulación. 
+
+<a href="https://www.loom.com/share/601ccd1b21f14bd4999cd6b41fa7456d
 " rel="some text">![Foo](https://i.imgur.com/sVijgPE.jpg)</a>
 
 ## Tarea 5 :
 [Carpeta Tarea 5](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%205)
 
-Links para visualización de Dashboards Online en Tableau Public de datos obtenidos por los sensores 
+Por último, los datos del clima en Elgoibar durante el periodo de 2016-2017 también pueden graficarse y hacerse públicos para todos los usuarios registrados en Tableau Public. Esto se debe, a que este software costituye un herramienta muy eficiente tanto para la realización de hojas que serán incorporadas al dashboard, como para su transmisión a servidores Tableau en la nube. 
+A continuación se muestra el dashboard creado para mostrar los datos recogidos por los sensores, que consiste a su vez en un enlace directo al dashboard público. Como se aprecia en la imagen, mediante la representación de la evolución de cada magnitud a lo largo del tiempo o la correlación entre magnitudes, se distingue la información más relevante y posibilita tomar decisiones más certeras y objetivas. 
 
 
 <a href="https://public.tableau.com/views/Tarea662/Dashboard1?:showVizHome=no" rel="some text">![Foo](https://i.imgur.com/exxwFGR.jpg)</a>
