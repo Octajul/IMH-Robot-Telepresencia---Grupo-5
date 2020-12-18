@@ -121,8 +121,12 @@ Además del ruido, los sensores también recogen datos sobre las siguientes magn
 Para la visualización de estos valores recogidos por los sensores, el código de Particle debe ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
 
 
--Flow 1: Es para colocar un mapa en el dashboard "IMH Robot Telepresencia"
--Flow 3:Se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia en el dashboard mencionado. 
+- Flow 1: Es para colocar un mapa en el dashboard "IMH Robot Telepresencia"
+
+
+- Flow 3:Se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia en el dashboard mencionado. 
+
+
 Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciarse clicando en el enlace habilitado para acceder a la carpeta referente a la Tarea 3 del repositorio. 
 
 ## Tarea 4 : 
