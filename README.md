@@ -71,6 +71,11 @@ Código de Particle para la obtención de datos por parte del sensor y su transm
 
 Archivo .JSON con flows necesarios para la visualización del Dashboard
 
+En este folder está el código de Particle y los archivos JSON de RED Node con los que se han creado las pestañas Flow 1 y Flow 3
+Flow 1 Es para colocar un mapa en la pestaña IMH Robot Telepresencia
+Flow 3 se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia
+
+
 ## Tarea 4 : 
 [Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
 
