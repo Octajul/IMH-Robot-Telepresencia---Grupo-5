@@ -59,7 +59,7 @@ Archivos CAD con modificaciones para uso del sonar y sensor
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/Back%20V2.0.stl">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
 
-<a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/nose_v1%20v2.stl">![Foo](https://i.imgur.com/UnobRzq.jpg)</a>
+<a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/UM2_nose_v1%20v4.stl">![Foo](https://i.imgur.com/UnobRzq.jpg)</a>
 
 
 ## Tarea 3 : 
