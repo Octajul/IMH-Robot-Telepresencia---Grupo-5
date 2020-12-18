@@ -110,10 +110,11 @@ La tercera tarea alberga el código de Particle escrito en lenguaje C++ para la 
 ```
 Además de ruido, sensores también recogen datos sobre las siguientes magnitudes que son críticas en la fabricación de componentes plásticos mediante fabricación aditiva (FDM):
 
-⋅⋅* Temperatura (ºC).
-⋅⋅* Humedad (%).
-⋅⋅* Presencia de CO2 (PPM).
-⋅⋅* Calidad de aire (PPM).
+
+- Temperatura (ºC).
+- Humedad (%).
+- Presencia de CO2 (PPM).
+- Calidad de aire (PPM).
 
 
 Para la visualización de estos valores recogidos por los sensores, el código de Particle debe ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
