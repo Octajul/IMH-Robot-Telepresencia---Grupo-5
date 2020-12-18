@@ -20,7 +20,8 @@ Adicionalmente, para evitar la caída del bot, un sensor de ultrasonidos conecta
 Tras esquivar la caida, el bot continúa siendo guiado a través de los sensores lumínicos.
 
 
-A continuación se muestra el fragmento del código más representativo del funcionamiento del GiggleBot, que demuestra los explicado previamente:
+A continuación se muestra el fragmento del código más representativo del funcionamiento del GiggleBot, que demuestra lo explicado previamente:
+
 ```python
 while True:
            
