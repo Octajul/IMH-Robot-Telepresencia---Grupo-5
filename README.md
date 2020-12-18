@@ -41,3 +41,5 @@ Links para visualización de Dashboards Online en Tableau Public de datos obteni
 <a href="https://www.youtube.com/watch?v=tk9war7_y0Q&ab_channel=Murtaza%27sWorkshop-RoboticsandAI
 " target="_blank"><img src="https://www.youtube.com/watch?v=tk9war7_y0Q&ab_channel=Murtaza%27sWorkshop-RoboticsandAI.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+<a href="http://google.com.au/" rel="some text">![Foo](http://www.google.com.au/images/nav_logo7.png)</a>
