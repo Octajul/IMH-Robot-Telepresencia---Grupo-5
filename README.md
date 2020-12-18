@@ -1,5 +1,5 @@
 
-> Open this page at [https://octajul.github.io/sonar--ligh-sensors/](https://octajul.github.io/sonar--ligh-sensors/)
+
 
 # Proyecto de Robot de Telepresencia IMH
 
@@ -7,7 +7,7 @@
 
 
 >Se llevaron a cabo 5 tareas distintas que se pueden ver en el repositorio en cada carpeta
->
+
 
 #Integrantes: Aitor, Iñaki & Julio Gonzalez
 
@@ -51,14 +51,9 @@ while True:
                 gigglebot.drive_straight(gigglebotWhichDriveDirection.FORWARD)
 ```
  
-
 ## Tarea 2 : 
 
 Archivos CAD con modificaciones para uso del sonar y sensor
-
-
-[![IMAGEN NOSE](Tarea 2/nose_v1 v2.stl)](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/blob/master/Tarea%202/nose_v1%20v2.stl)
-
 
 <a href="https://www.imh.eus/eu" rel="some text">![Foo](https://i.imgur.com/CWoaKO0.jpg)</a>
 
