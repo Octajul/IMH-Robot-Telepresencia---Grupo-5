@@ -41,7 +41,8 @@ Archivo .JSON con flows necesarios para la visualización del Dashboard
 
 Codigo en control IO y video de funcionamiento 
 
-<a href="https://public.tableau.com/profile/i.aki.rubio#!/vizhome/Tarea662/Dashboard1?publish=yes" rel="some text">![Foo](https://i.imgur.com/sVijgPE.jpg)</a>
+<a href="https://www.loom.com/share/601ccd1b21f14bd4999cd6b41fa7456d
+" rel="some text">![Foo](https://i.imgur.com/sVijgPE.jpg)</a>
 
 ## Tarea 5 :
 
