@@ -144,7 +144,7 @@ Además del código de Control IO para ejecutar el escenario en la aplicación d
 ## Tarea 5 :
 [Carpeta Tarea 5](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%205)
 
-Por último, los datos del clima en Elgoibar durante el periodo de 2016-2017 también pueden graficarse y hacerse públicos para todos los usuarios registrados en Tableau Public. Esto se debe, a que este software costituye un herramienta muy eficiente tanto para la realización de hojas que serán incorporadas al dashboard, como para su transmisión a servidores Tableau en la nube. 
+Por último, los datos del clima en Elgoibar durante el periodo de 2016-2017 también pueden graficarse y hacerse públicos para todos los usuarios registrados en Tableau Public. Esto se debe, a que este software constituya una herramienta muy eficiente tanto para la realización de hojas que serán incorporadas al dashboard, como para su transmisión a servidores Tableau en la nube. 
 
 
 A continuación se muestra el dashboard creado para mostrar los datos recogidos por los sensores, que consiste a su vez en un enlace directo al dashboard público. Como se aprecia en la imagen, mediante la representación de la evolución de cada magnitud a lo largo del tiempo o la correlación entre magnitudes, se distingue la información más relevante y posibilita tomar decisiones más certeras y objetivas. 
