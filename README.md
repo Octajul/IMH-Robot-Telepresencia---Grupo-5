@@ -132,9 +132,9 @@ Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciars
 ## Tarea 4 : 
 [Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
 
-Para simular el proceso de distribución de los paquetes que contendrían los productos GiggleBot fabricados, se ha empelado la herramienta Factory IO. En esta, se ha escogido un escenario que clasificaría los pedidos dependiendo la altura del paquete, enviando los paquetes grandes a los contenedores de los rodillos derechos y los pequeños, sin embargo, a los contenedores del camino izquierdo. 
+Para simular el proceso de distribución de los paquetes que contendrían los productos GiggleBot fabricados, se ha empleado la herramienta Factory IO. En esta, se ha escogido un escenario que clasificaría los pedidos dependiendo la altura del paquete, enviando los paquetes grandes a los contenedores de los rodillos derechos y los pequeños, sin embargo, a los contenedores del camino izquierdo. 
 
-Es reseñable, que para la programación del escenario, no se ha utilizado la plantilla estándar básica disponible, si no que se ha optado por empezar desde 0 de manera autónoma y sin hacer uso de los recursos proporcionados, otorgando mayor singularidad al funcionamiento de la aplicación. Por ejemplo, se ha creadp una memoria FiFo (First In First Out) que va registrando el tamaño de cada uno de las cajas que se desplaza hacia la plataforma giratoria y al momento de que se retira la caja de la plataforma se borra y se registra una nueva caja.
+Es reseñable, que para la programación del escenario, no se ha utilizado la plantilla estándar básica disponible, si no que se ha optado por empezar desde 0 de manera autónoma y sin hacer uso de los recursos proporcionados, otorgando mayor singularidad al funcionamiento de la aplicación. Por ejemplo, se ha creado una memoria FiFo (First In First Out) que va registrando el tamaño de cada una de las cajas que se desplaza hacia la plataforma giratoria y al momento de que se retira la caja de la plataforma se borra y se registra una caja nueva.
 
 Además del código de Control IO para ejecutar el escenario en la aplicación de Factory IO, también se proporciona un enlace a LOOM que muestra no solo el esquema de automatización del escenario, si no también la ejecución de la simulación. 
 
@@ -145,6 +145,8 @@ Además del código de Control IO para ejecutar el escenario en la aplicación d
 [Carpeta Tarea 5](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%205)
 
 Por último, los datos del clima en Elgoibar durante el periodo de 2016-2017 también pueden graficarse y hacerse públicos para todos los usuarios registrados en Tableau Public. Esto se debe, a que este software costituye un herramienta muy eficiente tanto para la realización de hojas que serán incorporadas al dashboard, como para su transmisión a servidores Tableau en la nube. 
+
+
 A continuación se muestra el dashboard creado para mostrar los datos recogidos por los sensores, que consiste a su vez en un enlace directo al dashboard público. Como se aprecia en la imagen, mediante la representación de la evolución de cada magnitud a lo largo del tiempo o la correlación entre magnitudes, se distingue la información más relevante y posibilita tomar decisiones más certeras y objetivas. 
 
 
