@@ -14,9 +14,12 @@
 [Carpeta Tarea 1](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%201)
 
 La primera tarea está orientada a crear un código que permita el movimiento controlado del GiggleBot y le indique detenerse en el extremo de una superficie, así como evitar su caída.
+
 En este caso, se ha optado por dirigir el robot a través de sensores de luminosidad que captan la luz emitida por un dispositivo, como podría ser el flash del teléfono móvil. Estableciendo un diferencial de 100 entre los valores recogidos por cada sensor (derecho o izquierdo), el robot distingue si debe girar a la derecha o la izquierda, o sin embargo, seguir recto si la diferencia entre valores es menor a 100.
 Adicionalmente, para evitar la caída del bot, un sensor de ultrasonidos conectado al microcontrolador mide constantemente la distancia que lo separada del suelo sobre el que se mueve y cuando esta distancia supero los 15cm, el robot gira hasta que esta distancia se convierte en menor a 15cm. 
 Tras esquivar la caida, el bot continúa siendo guiado a través de los sensores lumínicos.
+
+
 A continuación se muestra el fragmento del código más representativo del funcionamiento del GiggleBot, que demuestra los explicado previamente:
 ```python
 while True:
@@ -111,6 +114,8 @@ Además de ruido, sensores también recogen datos sobre las siguientes magnitude
 -Calidad de aire (PPM)
 
 Para la visualización de estos valores recogidos por los sensores, el código de Particle deben ser parseado y transferido a Node-RED. Este programa permite creas pestañas que alberguen cajas preprogramadas a disposición de los usuarios. En este caso, se han creado las pestañas Flow 1 y Flow 3:
+
+
 -Flow 1: Es para colocar un mapa en el dashboard "IMH Robot Telepresencia"
 -Flow 3:Se encarga de mostrar los datos desplegados de los sensores del robot de Telepresencia en el dashboard mencionado. 
 Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciarse clicando en el enlace habilitado para acceder a la carpeta referente a la Tarea 3 del repositorio. 
