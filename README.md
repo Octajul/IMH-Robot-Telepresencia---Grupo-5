@@ -133,7 +133,9 @@ Para la visualización de estos valores recogidos por los sensores, el código d
 
 Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciarse clicando en el enlace habilitado para acceder a la carpeta referente a la Tarea 3 del repositorio. 
 
+Diagrama Conexion Microcontrolador y sensor MS4 Ambimate:
 
+<a>![Foo](https://i.imgur.com/3BcimqU.jpg)</a>
 
 
 ## Tarea 4 : 
