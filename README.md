@@ -129,6 +129,11 @@ Para la visualización de estos valores recogidos por los sensores, el código d
 
 Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciarse clicando en el enlace habilitado para acceder a la carpeta referente a la Tarea 3 del repositorio. 
 
+Esquema de conexiones:
+
+<a>![Foo](https://i.imgur.com/VK0wVcQ.jpg)</a>
+
+
 ## Tarea 4 : 
 [Carpeta Tarea 4](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%204)
 
