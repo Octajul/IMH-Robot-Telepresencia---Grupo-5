@@ -69,6 +69,10 @@ En cuanto a la parte delantera (nose), se ha escogido realizar dos orificios al 
 
 <a href="https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/raw/master/Tarea%202/UM2_nose_v1%20v4.stl">![Foo](https://i.imgur.com/UnobRzq.jpg)</a>
 
+Esquema de conexiones:
+
+<a>![Foo](https://i.imgur.com/VK0wVcQ.jpg)</a>
+
 
 ## Tarea 3 : 
 [Carpeta Tarea 3](https://github.com/Octajul/IMH-Robot-Telepresencia---Grupo-5/tree/master/Tarea%203)
@@ -129,9 +133,7 @@ Para la visualización de estos valores recogidos por los sensores, el código d
 
 Todo el código de Node-RED se ha recogido en un fichero .JSON y puede apreciarse clicando en el enlace habilitado para acceder a la carpeta referente a la Tarea 3 del repositorio. 
 
-Esquema de conexiones:
 
-<a>![Foo](https://i.imgur.com/VK0wVcQ.jpg)</a>
 
 
 ## Tarea 4 : 
